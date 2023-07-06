@@ -80,7 +80,6 @@ frappe.ui.form.ControlAttach = class ControlAttach extends frappe.ui.form.Contro
 			options.doctype = this.frm.doctype;
 			options.docname = this.frm.docname;
 			options.fieldname = this.df.fieldname;
-			options.make_attachments_public = this.frm.meta.make_attachments_public;
 		}
 
 		if (this.df.options) {

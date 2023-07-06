@@ -167,9 +167,6 @@ export default {
 		on_success: {
 			default: null
 		},
-		make_attachments_public: {
-			default: null,
-		},
 		restrictions: {
 			default: () => ({
 				max_file_size: null, // 2048 -> 2KB
@@ -323,7 +320,7 @@ export default {
 						request_succeeded: false,
 						error_message: null,
 						uploading: false,
-						private: !this.make_attachments_public,
+						private: true
 					};
 				});
 
