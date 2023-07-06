@@ -519,7 +519,9 @@ export default {
 				if (file.file_obj) {
 					form_data.append('file', file.file_obj, file.name);
 				}
-				form_data.append('is_private', +file.private);
+				console.log('file', file);
+				console.log('+file.private', +file.private);
+				form_data.append('is_private', 1);
 				form_data.append('folder', this.folder);
 
 				if (file.file_url) {
